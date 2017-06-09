@@ -9,6 +9,13 @@ namespace ToysShop.Models
 {
     public class Product
     {
+        private ICollection<Vendor> vendors;
+
+        public Product()
+        {
+            this.vendors = new HashSet<Vendor>();
+        }
+
         public int Id { get; set; }
 
         public string Name { get; set; }
@@ -22,5 +29,17 @@ namespace ToysShop.Models
         public decimal Price { get; set; }
 
         public int UnitsInStock { get; set; }
+
+        public ICollection<Vendor> Vendors
+        {
+            get
+            {
+                return this.vendors;
+            }
+            set
+            {
+                this.vendors = value;
+            }
+        }
     }
 }

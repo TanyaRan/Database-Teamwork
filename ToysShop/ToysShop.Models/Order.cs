@@ -8,6 +8,13 @@ namespace ToysShop.Models
 {
     public class Order
     {
+        private ICollection<ProductOrder> productOrders;
+
+        public Order()
+        {
+            productOrders = new HashSet<ProductOrder>();
+        }
+
         public int Id { get; set; }
 
         public int CustomerId { get; set; }
@@ -16,6 +23,6 @@ namespace ToysShop.Models
 
         public decimal TotalPrice { get; set; }
 
-        public virtual ICollection<OrderPerType> OrdersPerType { get; set; }
+        public virtual ICollection<ProductOrder> ProductOrders { get; set; }
     }
 }

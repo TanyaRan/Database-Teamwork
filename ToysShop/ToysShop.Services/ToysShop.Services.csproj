@@ -43,6 +43,15 @@
     <Compile Include="AddressService.cs" />
     <Compile Include="CategoryService.cs" />
     <Compile Include="CityService.cs" />
+    <Compile Include="Contracts\IAddressService.cs" />
+    <Compile Include="Contracts\ICategoryService.cs" />
+    <Compile Include="Contracts\ICityService.cs" />
+    <Compile Include="Contracts\ICustomerService.cs" />
+    <Compile Include="Contracts\IOfferService.cs" />
+    <Compile Include="Contracts\IOrderService.cs" />
+    <Compile Include="Contracts\IProductOrderService.cs" />
+    <Compile Include="Contracts\IProductService.cs" />
+    <Compile Include="Contracts\IVendorService.cs" />
     <Compile Include="CustomerService.cs" />
     <Compile Include="OfferService.cs" />
     <Compile Include="OrderService.cs" />

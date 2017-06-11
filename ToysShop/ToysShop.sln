@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysShop.Models", "ToysShop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysShop.Data", "ToysShop.Data\ToysShop.Data.csproj", "{3C223ED6-E7BF-4730-B37C-A534563AC119}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysShop.Web", "ToysShop.Web\ToysShop.Web.csproj", "{AC050543-3253-438F-8EA8-E3BC4008AB4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToysShop.Web.Tests", "ToysShop.Web.Tests\ToysShop.Web.Tests.csproj", "{85FDD1F5-F100-4BBD-A253-393BF2E4E6D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{3C223ED6-E7BF-4730-B37C-A534563AC119}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C223ED6-E7BF-4730-B37C-A534563AC119}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C223ED6-E7BF-4730-B37C-A534563AC119}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC050543-3253-438F-8EA8-E3BC4008AB4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC050543-3253-438F-8EA8-E3BC4008AB4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC050543-3253-438F-8EA8-E3BC4008AB4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC050543-3253-438F-8EA8-E3BC4008AB4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85FDD1F5-F100-4BBD-A253-393BF2E4E6D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85FDD1F5-F100-4BBD-A253-393BF2E4E6D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85FDD1F5-F100-4BBD-A253-393BF2E4E6D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85FDD1F5-F100-4BBD-A253-393BF2E4E6D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

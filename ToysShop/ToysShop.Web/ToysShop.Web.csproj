@@ -153,6 +153,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Importers\JsonAddressModel.cs" />
+    <Compile Include="Importers\JsonCategoryModel.cs" />
+    <Compile Include="Importers\JsonCityModel.cs" />
+    <Compile Include="Importers\JsonParentCategoryModel.cs" />
+    <Compile Include="Importers\JsonCategoryImporter.cs" />
+    <Compile Include="Importers\JsonVendorModel.cs" />
+    <Compile Include="Models\AllCitiesViewModel.cs" />
+    <Compile Include="Models\CityFormViewModel.cs" />
     <Compile Include="Models\CityViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -175,6 +183,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="JSONFiles\categories.1.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -214,6 +225,8 @@
     <Content Include="Views\City\All.cshtml" />
     <Content Include="Views\City\Details.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\CityViewModel.cshtml" />
+    <Content Include="Views\City\AllByName.cshtml" />
+    <Content Include="Views\City\CityForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

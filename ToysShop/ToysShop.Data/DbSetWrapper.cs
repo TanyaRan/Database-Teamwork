@@ -1,5 +1,6 @@
 ﻿using Bytes2you.Validation;
 using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
@@ -75,6 +76,11 @@ namespace ToysShop.Data
                 this.dbSet.Remove(entity);
             }
         }
+
+        //public IEnumerable<T> GetAllFiltered(Expression<Func<T, bool>> filterExpression)
+        //{
+        //    return this.dbSet.Where(filterExpression).ToList();
+        //}
 
         public IQueryable<T> AllWithInclude<TProperty>(Expression<Func<T, TProperty>> includeExpression)
         {

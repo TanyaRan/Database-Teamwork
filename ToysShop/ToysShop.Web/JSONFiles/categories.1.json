@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Name": "Кукли",
+    "ParentCategory": {
+      "Name": ""
+    }
+  },
+  {
+    "Name": "Барби",
+    "ParentCategory": {
+      "Name": "Кукли"
+    }
+  },
+  {
+    "Name": "Парцалени",
+    "ParentCategory": {
+      "Name": "Кукли"
+    }
+  }
+]

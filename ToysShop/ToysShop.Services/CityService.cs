@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ToysShop.Data.Contracts;
 using ToysShop.Models.SQLModels;
+using ToysShop.Models.SQLModels.Enums;
 using ToysShop.Services.Contracts;
 using ToysShop.Services.ServiceModels;
 
@@ -34,14 +35,37 @@ namespace ToysShop.Services
                 .Select(CityModel.Create).ToList();
         }
 
+        public IEnumerable<CityModel> GetAllCitiesSortedByName()
+        {
+            return this.cityDbSetWrapper.All
+                .ToList()
+                .OrderBy(c => c.Name)
+                .AsQueryable()
+                .Select(CityModel.Create).ToList();
+        }
+
         public CityModel GetCityById(int? id)
         {
             return new CityModel(this.cityDbSetWrapper.GetById(id));
         }
 
-        public CityModel GetCityByName(string name)
+        //public void AddCity(City city)
+        public void AddCity(string name, Region region)
         {
-            throw new NotImplementedException();
+            var city = new City
+            {
+                Name = name,
+                Region = region
+            };
+
+            this.cityDbSetWrapper.Add(city);
+            this.context.SaveChanges();
+        }
+
+        public void UpdateCity(City city)
+        {
+            this.cityDbSetWrapper.Update(city);
+            this.context.SaveChanges();
         }
     }
 }

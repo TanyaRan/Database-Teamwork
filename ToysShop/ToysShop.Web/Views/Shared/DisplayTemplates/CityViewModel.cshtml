@@ -1,0 +1,10 @@
+﻿@model ToysShop.Web.Models.CityViewModel
+
+<div>
+    <div>
+        @Html.ActionLink(Model.Name, "Details", new { id = Model.Id })
+    </div>
+    <div>
+        @Html.DisplayFor(m => m.Region)
+    </div>
+</div>

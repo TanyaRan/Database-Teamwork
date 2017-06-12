@@ -9,8 +9,10 @@ namespace ToysShop.Services.Contracts
 {
     public interface ICityService
     {
-        CityModel GetById(int? id);
+        CityModel GetCityById(int? id);
 
-        IEnumerable<CityModel> GetAllCities();
+        CityModel GetCityByName(string name);
+
+        IEnumerable<CityModel> GetAllCitiesSortedById();
     }
 }
